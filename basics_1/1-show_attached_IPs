@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #displays all active IPv4 IPs on the machine it’s executed on
 
-sed -e '/:/d' -e '/#/d' -e '/;/d' /etc/hosts | cut -f 1
+sed '/:/d' /etc/hosts | cut -f 1
